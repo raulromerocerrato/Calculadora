@@ -48,3 +48,12 @@ body{
 .operador{
 	background-color: orange;
 }
+@media(max-width: 800px){
+    .calculadora{
+        margin-right: 20%;
+	    margin-left: 20%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
