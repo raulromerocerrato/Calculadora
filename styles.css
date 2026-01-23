@@ -56,4 +56,10 @@ body{
     h1{
         font-size: 20px;
     }
+	.contenedor button{
+		height: 99px;
+	}
+	#pantalla{
+		height: 80px;
+	}
 }
