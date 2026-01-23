@@ -7,6 +7,9 @@ function agregar(valor){
 function calcular(){
 	try{
 		pantalla.value=eval(pantalla.value);
+		if(pantalla.value=='undefined'){
+			pantalla.value='Expresió mal escrita';
+		}
 	}catch{
 		pantalla.value="Syntax Error";
 	}
