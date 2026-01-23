@@ -15,3 +15,18 @@ function calcular(){
 function limpiar(){
 	pantalla.value=' ';
 }
+
+document.addEventListener('keydown',(event)=>{
+	const tecla=event.key;
+	if(/[0-9]/.test(tecla)){
+		agregar(tecla);
+	}else if(['+','-','*','/'].includes(tecla)){
+		agregar(tecla);
+	}else if(tecla==='Enter'){
+		calcular();
+	}else if(tecla==='Backspace'){
+		limpiar()
+	}else{
+		alert("Tecla no disponible");
+	}
+});
